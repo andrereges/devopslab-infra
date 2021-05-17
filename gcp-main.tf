@@ -24,7 +24,7 @@ resource "google_compute_instance" "helloworld" {
 }
 
 resource "google_app_engine_application" "app" {
-  project     = "DEFINIR"
+  project     = "lab-devops-cloud-andre"
   location_id = "us-central"
 }
 
