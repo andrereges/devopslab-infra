@@ -4,7 +4,7 @@ resource "google_compute_instance" "helloworld" {
   machine_type = "n1-standard-1"
   zone         = "southamerica-east1-a"
   tags         = ["labdevops"]
-  
+
   # Defini a Imagem da VM
   boot_disk {
     initialize_params {
@@ -20,7 +20,7 @@ resource "google_compute_instance" "helloworld" {
     }
     // A presença do bloco access_config, mesmo sem argumentos, garante que a instância estará acessível pela internet.
   }
-  
+
 }
 
 # Retorna o IP da VM criada
